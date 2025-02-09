@@ -1,0 +1,291 @@
+.secondDoctorPage {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  margin-top: 37px;
+  margin-bottom: 100px;
+}
+
+.secondDoctorPage .first-doc-inner {
+  display: flex;
+  gap: 26px;
+  flex-direction: column;
+}
+
+.secondDoctorPage .first-doc-inner .doc-img-text {
+  display: flex;
+  gap: 26px;
+}
+
+.secondDoctorPage .first-doc-inner .doc-image img {
+  background-color: #5F6FFF;
+  border-radius: 12px;
+  width: 270px;
+  height: 377px;
+}
+
+.secondDoctorPage .doctor-texts .textsOne {
+  border: solid 1px #ADADAD;
+  width: 100%;
+  border-radius: 12px;
+  padding-left: 42px;
+  padding-top: 43px;
+}
+
+.secondDoctorPage .doctor-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secondDoctorPage .doctor-texts h2 {
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.secondDoctorPage .doctor-texts .doctor-paragraph .main-info p {
+  color: #4B5563;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.secondDoctorPage .doctor-texts .doctor-paragraph .main-info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 11px;
+}
+
+.secondDoctorPage .doctor-texts .doctor-paragraph .main-info span {
+  border: solid 1px #4B5563;
+  padding: 8px 14px 8px;
+  border-radius: 43px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.secondDoctorPage .doctor-texts .doctor-about {
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.secondDoctorPage .doctor-texts .doctor-about p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.secondDoctorPage .doctor-texts .doctor-info p {
+  color: #4B5563;
+  line-height: 26px;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.secondDoctorPage .doctor-texts .doctor-fee h4 {
+  font-weight: 500;
+  font-size: 19px;
+  color: #4B5563;
+}
+
+.secondDoctorPage .doctor-texts .doctor-fee {
+  padding-bottom: 50px;
+}
+
+.secondDoctorPage.doctor-texts .doctor-fee span {
+  color: #000;
+}
+
+.secondDoctorPage .doctor-booking-info {
+  max-width: 904px;
+  width: 100%;
+  margin: auto;
+}
+
+.secondDoctorPage .doctor-booking-info .booking-heading h1 {
+  font-size: 25px;
+  color: #565656;
+  margin-bottom: 23px;
+  line-height: 31px;
+  margin-top: 43px;
+}
+
+.doctor-booking-info .apointment-time {
+  display: flex;
+  gap: 15px;
+}
+
+.doctor-booking-info .apointment-time .timeOne {
+  border: solid 1px #9CA3AF;
+  background-color: #fff;
+  border-radius: 43px;
+  width: 87px;
+  text-align: center;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  cursor: pointer;
+}
+
+
+.doctor-booking-info .apointment-time .timeOne h4 {
+  font-size: 20px;
+  color: #4B5563;
+}
+
+.doctor-booking-info .apointment-time .timeOne p {
+  font-size: 20px;
+  color: #4B5563;
+}
+
+.doctor-booking-info .booking-time .clockOne {
+  border: solid 1px rgba(156, 163, 175, 1);
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: rgba(75, 85, 99, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.doctor-booking-info .booking-time {
+  display: flex;
+  gap: 10px;
+}
+
+.doctor-booking-info .booking-time .clockOne h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.doctor-booking-info .booking-btn {
+  margin-top: 50px;
+}
+
+.doctor-booking-info .booking-btn button {
+  padding: 24px 80px;
+  border-radius: 43px;
+  background-color: rgba(95, 111, 255, 1);
+  color: #fff;
+  font-size: 20px;
+  border: solid 1px rgba(95, 111, 255, 1);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.doctor-booking-info .booking-btn button:hover {
+  background-color: #142bf7;
+}
+
+.successful-message {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0000001a;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.successful-message::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: red;
+  animation: anim 4s linear forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.error p {
+  font-size: 17px;
+}
+
+.success p {
+  font-size: 17px;
+}
+
+.success-massage {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0000001a;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.success-massage:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: green;
+  animation: anim 4s linear forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.error-massage {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0000001a;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.error-massage:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: green;
+  animation: anim 4s linear forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+
+}

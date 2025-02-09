@@ -1,0 +1,74 @@
+
+
+.specialityComponent{
+  margin-top: 119px;
+  display: flex;
+  justify-content: center;
+}
+
+.specialityComponent .speciality-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.specialityComponent .speciality-inner .main-heading h1{
+line-height: 50px;
+font-size: 40px;
+font-weight: 500;
+}
+
+.speciality-inner .main-paragraph p{
+  line-height: 27px;
+  font-size: 18px;
+  margin-bottom: 70px;
+  max-width: 573px;
+  width: 100%;
+  text-align: center;
+  color: #4B5563;
+}
+
+
+.speciality-inner .images-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+  margin-bottom: 114px;
+}
+
+.speciality-inner .images-container .image{
+  text-align: center;
+}
+
+.speciality-inner .images-container .image p{
+  line-height: 22px;
+  color: #4B5563;
+  font-size: 18px;
+}
+
+.speciality-inner .images-container img{
+  max-width: 125px;
+}
+
+
+@media only screen and (max-width:1180px){
+.speciality-inner .images-container{
+grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
+@media only screen and (max-width: 630px){
+.speciality-inner .images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .specialityComponent .main-paragraph{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

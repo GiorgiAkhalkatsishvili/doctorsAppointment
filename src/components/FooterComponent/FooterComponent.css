@@ -1,0 +1,116 @@
+
+
+.footerComponent{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.footerComponent .footer-inner{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.footerComponent .footer-main-info .footer-main-logo{
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footerComponent .footer-main-info .footer-main-logo h1{
+  color: #000B6D;
+  font-size: 34px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.footerComponent .footer-fake-text{
+  max-width: 540px;
+  width: 100%;
+}
+
+.footerComponent .footer-fake-text p{
+  color: #4B5563;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footerComponent .footer-inner .footer-lists{
+  display: flex;
+  gap: 200px;
+}
+
+.footerComponent .footer-inner .footer-lists ul li{
+list-style-type: none;
+}
+
+.footerComponent .footer-inner .footer-lists .first li{
+  color: #4B5563;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.footerComponent .footer-inner .footer-lists .second{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.footerComponent .footer-inner .footer-lists .second li{
+  font-size: 18px;
+  color: #4B5563;
+  font-weight: 400;
+}
+
+.footerComponent hr{
+  width: 100%;
+  border: solid 1px #BDBDBD;
+  margin-bottom: 30px;
+}
+
+.footerComponent .final-text{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.footerComponent .final-text p{
+  color: #4B5563;
+  font-size: 18px;
+}
+
+@media only screen and (max-width:1180px){
+  .footerComponent{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.footerComponent .footer-fake-text {
+  width: 400px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 950px){
+  .footerComponent .footer-inner{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .footerComponent .footer-inner .footer-lists{
+    gap: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 450px){
+.footerComponent .footer-inner{
+  padding-left: 20px;
+}
+}

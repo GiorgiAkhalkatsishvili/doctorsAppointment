@@ -1,0 +1,173 @@
+
+.doctorsComponent{
+  margin-bottom: 150px;
+  place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.doctorsComponent .doctors-inner .main-headings{
+text-align: center;
+margin-bottom: 40px;
+}
+
+.doctorsComponent .doctors-inner .main-headings p{
+font-size: 18px;
+line-height: 27px;
+color: #4B5563;
+}
+
+.doctorsComponent .doctors-inner .main-headings h1{
+  font-size: 40px;
+  color: #1F2937;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.doctorsComponent .doctor-images-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 15px;
+  column-gap: 25px;
+  margin: auto;
+  align-items: center;
+}
+
+
+.doctorsComponent .doctor-images-container .doctors-list{
+  border-radius: 12px 12px 0 0;
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.doctorsComponent .doctor-images-container .image-texts{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.doctor-images-container .doctor-img img{
+background-color: #EAEFFF;
+width: 100%;
+height: 260px;
+border-radius: 12px 12px 0 0;
+}
+
+.doctorsComponent .doctor-images-container span{
+border: solid 1px #0FBF00;
+border-radius: 50%;
+background-color: #0FBF00;
+margin-left: 14px;
+width: 7px;
+height: 7px;
+}
+
+.doctorsComponent .doctor-images-container p{
+  color: #0FBF00;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.doctor-images-container .title-speciality{
+  margin-left: 14px;
+}
+
+.doctorsComponent .each-doctor-inner{
+  border: solid 1px #C9D8FF;
+  border-radius: 12px;
+  cursor: pointer;
+  max-width: 215px;
+}
+
+.doctor-images-container .imageOne .doctor-info h2{
+line-height: 27px;
+font-size: 22px;
+color: #1F2937;
+}
+
+.doctor-images-container .title-speciality p{
+  color: #4B5563;
+  line-height: 18px;
+  font-size: 15px;
+  padding-bottom: 21px;
+  margin-top: 7px;
+}
+
+
+.doctors-inner .doctors-btn{
+  margin-top: 60px;
+display: flex;
+justify-content: center;
+margin-bottom: 150px;
+}
+
+.doctors-inner .doctors-btn button{
+  padding: 18px 83px 18px 83px;
+  font-size: 20px;
+  color: #4B5563;
+  line-height: 25px;
+  border-radius: 50px;
+  border: solid 1px #EAEFFF;
+  background-color: #EAEFFF;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.doctors-inner .doctors-btn button:hover{
+  background-color: #cfd7f3;
+}
+
+@media only screen and (max-width:1180px){
+.doctorsComponent .doctor-images-container{
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: auto;
+}
+
+.doctorsComponent .each-doctor-inner{
+max-width: 280px;
+}
+
+.doctorsComponent .doctor-images-container .doctors-list{
+  width: 280px;
+}
+
+.doctor-images-container .doctor-img img{
+  height: 350px;
+  width: 100%;
+}
+
+}
+
+
+@media only screen and (max-width: 950px){
+.doctorsComponent .doctor-images-container {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 630px){
+.doctorsComponent .doctor-images-container {
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: auto;
+  }
+
+.doctorsComponent .each-doctor-inner {
+  max-width: 360px;
+}
+
+.doctorsComponent .doctor-images-container .doctors-list {
+  width: 360px;
+}
+
+.doctor-images-container .doctor-img img {
+  height: 400px;
+  width: 100%;
+}
+}

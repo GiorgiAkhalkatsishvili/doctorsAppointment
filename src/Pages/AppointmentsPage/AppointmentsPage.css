@@ -1,0 +1,125 @@
+
+.appointmentsPage{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  margin-top: 130px;
+}
+
+.appointmentsPage .main-texts h1{
+color: #4B5563;
+font-size: 24px;
+padding-bottom: 23px;
+}
+
+.appointmentsPage hr{
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.appointmentsPage .booked-doctor{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #D1D1D1;
+  padding-bottom: 18px;
+  margin-bottom: 50px;
+}
+
+.appointmentsPage .doctor-details img{
+  background-color: #EAEFFF;
+  border-radius: 2px;
+  height: 190px;
+  width: 150px;
+}
+
+.appointmentsPage .doctor-details{
+  display: flex;
+  gap: 22px;
+}
+
+.appointmentsPage .doctor-details .doctor-info p{
+ color: #4B5563; 
+}
+
+.appointmentsPage .doctor-details .dotor-address{
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.appointmentsPage .doctor-details .dotor-address h4{
+font-size: 18px;
+color: #4B5563;
+}
+
+.appointmentsPage .doctor-details .dotor-address h5{
+font-size: 16px;
+color: #4B5563;
+width: 200px;
+font-weight: 400;
+}
+
+.appointmentsPage .doctor-details .doctor-date-time h4{
+font-size: 16px;
+color: #4B5563;
+width: 200px;
+}
+
+.appointmentsPage .doctor-details .doctor-date-time{
+margin-top: 18px;
+}
+
+.appointmentsPage .booked-doctor-btns{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 16px;
+}
+
+.appointmentsPage .booked-doctor-btns button{
+  padding: 14px 40px;
+  max-width: 223px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.booked-doctor-btns .doctor-btn-pay button{
+  background-color: #5F6FFF;
+  border: solid 1px #5F6FFF;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 0.4s ease;
+}
+
+.booked-doctor-btns .doctor-btn-pay button:hover {
+  background-color: #142bf7;
+  border: solid 1px #142bf7;
+}
+
+.booked-doctor-btns .doctor-btn-cancel button{
+  background-color: #fff;
+  border: solid 1px #BABABA;
+  color: #4B5563;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 0.4s ease;
+}
+
+.booked-doctor-btns .doctor-btn-cancel button:hover {
+  background-color: red;
+  border: solid 1px red;
+  color: #fff;
+}
+
+.appointmentsPage .warning-text{
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.appointmentsPage .warning-text p{
+  font-size: 20px;
+  color: rgb(210, 6, 6);
+}

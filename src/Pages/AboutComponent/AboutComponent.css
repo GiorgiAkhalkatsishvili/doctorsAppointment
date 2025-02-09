@@ -1,0 +1,99 @@
+
+
+.aboutComponent{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.aboutComponent .main-heading{
+  margin-top: 44px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.aboutComponent .main-heading h1{
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+}
+
+.aboutComponent .main-heading span{
+  color: #4B5563;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+
+.aboutComponent .main-image-info{
+  display: flex;
+  gap: 64px;
+  margin-bottom: 65px;
+}
+
+
+.aboutComponent .main-image-info .image-section img{
+  width: 440px;
+}
+
+.aboutComponent .main-image-info img{
+  width: 440px;
+}
+
+.aboutComponent .main-image-info .main-text h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.aboutComponent .main-image-info .main-text p{
+color: #4B5563;
+font-size: 18px;
+line-height: 32px;
+}
+
+
+.aboutComponent .bottom-info h1{
+font-size: 24px;
+line-height: 30px;
+}
+
+.aboutComponent .bottom-info span{
+  color: #4B5563;
+  font-weight: 400;
+}
+
+.aboutComponent .info-containers{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #ABABAB;
+}
+
+.aboutComponent .info-containers .infoOne h2{
+padding-top: 60px;
+padding-left: 40px;
+font-size: 18px;
+}
+
+.aboutComponent .info-containers .firstInfo{
+  border-right: solid 1px #ABABAB;
+}
+
+.aboutComponent .info-containers .secondInfo{
+  border-right: solid 1px #ABABAB;
+}
+
+.aboutComponent .info-containers .infoOne p{
+  padding-top: 30px;
+padding-left: 40px;
+font-size: 18px;
+color: #4B5563;
+padding-bottom: 60px;
+padding-right: 100px;
+}
+
+.aboutComponent .bottom-info{
+  margin-bottom: 130px;
+}

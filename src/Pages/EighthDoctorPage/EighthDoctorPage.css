@@ -1,0 +1,104 @@
+.successful-message {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0000001a;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.successful-message::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: red;
+  animation: anim 4s linear forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.error p {
+  font-size: 17px;
+}
+
+.success p {
+  font-size: 17px;
+}
+
+.success-massage {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0000001a;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.success-massage:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: green;
+  animation: anim 4s linear forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.error-massage {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px #0000001a;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.error-massage:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: green;
+  animation: anim 4s linear forwards;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+
+}

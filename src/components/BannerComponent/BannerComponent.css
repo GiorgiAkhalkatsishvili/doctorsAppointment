@@ -1,0 +1,169 @@
+.bannerComponent {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  margin-top: 26px;
+}
+
+.bannerComponent .banner-inner {
+  background-color: #5F6FFF;
+  border-radius: 12px;
+  padding-left: 80px;
+  padding-top: 103px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.bannerComponent .banner-inner .banner-headings {
+  max-width: 500px;
+  width: 100%;
+}
+
+.bannerComponent .banner-inner .banner-headings h1 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.bannerComponent .banner-inner .users-info {
+  display: flex;
+  max-width: 500px;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bannerComponent .banner-inner .users-info .usersImgs {
+  display: flex;
+}
+
+.bannerComponent .banner-inner .users-info .usersImgs img {
+  width: 130px;
+  height: 56px;
+}
+
+.bannerComponent .users-info .banner-paragraph p {
+  color: #fff;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.bannerComponent .banner-inner .banner-btn {
+  margin-bottom: 90px;
+}
+
+.bannerComponent .banner-inner .banner-btn button {
+  padding: 15px 30px;
+  background-color: #fff;
+  border: solid 1px #fff;
+  border-radius: 47px;
+  font-size: 17px;
+  color: #595959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.bannerComponent .main-banner-img img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.bannerComponent .main-banner-img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+
+
+@media only screen and (max-width:1180px){
+  .bannerComponent{
+padding: 0 20px 0;
+  }
+
+.bannerComponent .banner-inner .banner-headings {
+  max-width: 400px;
+  width: 100%;
+}
+
+.bannerComponent .banner-inner .banner-headings h1 {
+  line-height: 50px;
+  color: #fff;
+}
+
+  .bannerComponent .main-banner-img img{
+    position: relative;
+    bottom: -1px;
+    width: 500px;
+  }
+
+.bannerComponent .users-info .banner-paragraph{
+  width: 250px;
+}
+}
+
+@media only screen and (max-width: 950px){
+  .bannerComponent .banner-inner{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 103px;
+  }
+
+  .bannerComponent .main-banner-img{
+    position: static;
+    margin-bottom: -5px;
+  }
+
+  .bannerComponent .banner-headings{
+    text-align: center;
+  }
+
+  .bannerComponent .banner-inner .banner-headings h1{
+    font-size: 60px;
+  }
+
+  .bannerComponent .users-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+.bannerComponent .users-info .banner-paragraph {
+  font-size: 26px;
+  text-align: center;
+}
+
+.bannerComponent .users-info .banner-paragraph p{
+  font-size: 26px;
+}
+
+  .bannerComponent .banner-btn{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 630px) {
+.bannerComponent .banner-inner .banner-headings h1{
+  font-size: 50px;
+}
+}
+
+@media only screen and (max-width: 450px){
+.bannerComponent .banner-inner .banner-headings h1 {
+  font-size: 40px;
+}
+
+.bannerComponent .banner-inner .banner-headings {      max-width: 300px;
+ width: 100%;
+ }
+
+.bannerComponent .main-banner-img img{
+ width: 400px;
+}
+}

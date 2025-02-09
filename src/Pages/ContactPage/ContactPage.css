@@ -1,0 +1,84 @@
+
+.contactPage {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 130px;
+}
+
+.contactPage .main-heading {
+  margin-top: 44px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactPage.main-heading h1 {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+}
+
+.contactPage .main-heading span {
+  color: #4B5563;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.contactPage .main-img img{
+  max-width: 560px;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.contactPage .center-info{
+  display: flex;
+  gap: 48px;
+}
+
+.contactPage .main-texts h3{
+color: #4B5563;
+font-size: 24px;
+}
+
+.contactPage .main-texts p{
+color: #4B5563;
+font-size: 18px;
+line-height: 32px;
+}
+
+.center-info .main-texts{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: center;
+}
+
+.center-info .main-texts .texts-one{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.center-info .main-texts .texts-three{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.contactPage button{
+  margin-top: 30px;
+  width: 170px;
+  height: 62px;
+  cursor: pointer;
+  color: #1F2937;
+  background-color: #fff;
+  font-size: 16px;
+  transition: 0.4s ease;
+}
+
+.contactPage button:hover{
+  background-color: #5F6FFF;
+  border: solid 1px #5F6FFF;
+  color: #fff;
+}
