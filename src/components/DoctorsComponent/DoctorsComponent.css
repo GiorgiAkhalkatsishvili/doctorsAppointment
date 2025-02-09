@@ -171,3 +171,26 @@ max-width: 280px;
   width: 100%;
 }
 }
+
+
+@media only screen and (max-width: 450px){
+.doctorsComponent .each-doctor-inner {
+    max-width: 340px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .doctorsComponent .doctor-images-container .doctors-list {
+    width: 340px;
+  }
+
+  .doctor-images-container .doctor-img img {
+    height: 400px;
+    width: 100%;
+  }
+
+.doctorsComponent .doctors-inner .main-headings p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}

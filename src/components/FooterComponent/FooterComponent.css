@@ -110,7 +110,13 @@ gap: 10px;
 
 
 @media only screen and (max-width: 450px){
-.footerComponent .footer-inner{
-  padding-left: 20px;
+.footerComponent .footer-fake-text {
+  width: 100%;
+  padding-right: 10px;
+}
+
+
+.footerComponent .footer-inner .footer-lists {
+  gap: 40px;
 }
 }
