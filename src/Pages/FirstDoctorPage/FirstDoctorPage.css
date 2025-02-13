@@ -330,7 +330,7 @@ cursor: pointer;
 @media only screen and (max-width: 630px){
 .firstDoctorPage .doctor-texts .textsOne{
 position: relative;
-margin-top: -100px;
+margin-top: -80px;
 background-color: #fff;
 }
 
@@ -361,7 +361,7 @@ justify-content: center;
 
 @media only screen and (max-width: 450px){
 .firstDoctorPage .first-doc-inner .doc-image img {
-  width: 300px;
+  width: 270px;
   margin-right: 10px;
 }
 
@@ -371,5 +371,13 @@ justify-content: center;
 
 .firstDoctorPage .booking-time{
   justify-content: center;
+}
+
+.firstDoctorPage .doctor-texts .doctor-paragraph .main-info{
+  flex-direction: column;
+}
+
+.firstDoctorPage .doctor-texts .textsOne{
+  padding-left: 20px;
 }
 }

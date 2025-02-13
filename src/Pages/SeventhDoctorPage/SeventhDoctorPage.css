@@ -328,7 +328,7 @@
 @media only screen and (max-width: 630px) {
   .secondDoctorPage .doctor-texts .textsOne {
     position: relative;
-    margin-top: -100px;
+    margin-top: -80px;
     background-color: #fff;
   }
 
@@ -359,7 +359,7 @@
 
 @media only screen and (max-width: 450px) {
   .secondDoctorPage .first-doc-inner .doc-image img {
-    width: 300px;
+    width: 270px;
     margin-right: 10px;
   }
 
@@ -370,4 +370,12 @@
   .secondDoctorPage .booking-time {
     justify-content: center;
   }
+
+.secondDoctorPage .doctor-texts .doctor-paragraph .main-info {
+  flex-direction: column;
+}
+
+.secondDoctorPage .doctor-texts .textsOne {
+  padding-left: 20px;
+}
 }
