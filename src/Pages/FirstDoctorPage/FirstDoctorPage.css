@@ -119,6 +119,7 @@ margin-top: 43px;
 .doctor-booking-info .apointment-time{
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .doctor-booking-info .apointment-time .timeOne{
@@ -160,6 +161,7 @@ cursor: pointer;
 .doctor-booking-info .booking-time{
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .doctor-booking-info .booking-time .clockOne h5{
@@ -289,4 +291,85 @@ cursor: pointer;
     width: 0;
   }
 
+}
+
+
+@media only screen and (max-width:1180px){
+  .firstDoctorPage .doc-img-text{
+   padding-left: 20px;
+   margin: auto;
+  }
+ .firstDoctorPage .doctor-texts {
+   padding-right: 20px;
+ }
+
+}
+
+@media only screen and (max-width: 950px) {
+.firstDoctorPage .doctor-texts{
+  padding-right: 20px;
+}
+
+.firstDoctorPage .textsOne{
+  height: auto;
+}
+
+}
+
+
+@media only screen and (max-width:700px){
+.firstDoctorPage .doctor-name{
+  display: block;
+}
+
+.firstDoctorPage .doctor-texts .doctor-paragraph .main-info{
+  flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 630px){
+.firstDoctorPage .doctor-texts .textsOne{
+position: relative;
+margin-top: -100px;
+background-color: #fff;
+}
+
+  .firstDoctorPage .first-doc-inner .doc-img-text{
+    flex-direction: column;
+    align-items: center;
+  }
+
+.firstDoctorPage .first-doc-inner .doc-image img{
+  width: 375px;
+  height: auto;
+}
+
+.firstDoctorPage .doctor-texts .doctor-paragraph .main-info{
+  flex-direction: row;
+}
+
+.firstDoctorPage .doctor-name{
+  display: flex;
+}
+
+.firstDoctorPage .booking-btn{
+  display: flex;
+justify-content: center;
+}
+}
+
+
+@media only screen and (max-width: 450px){
+.firstDoctorPage .first-doc-inner .doc-image img {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.firstDoctorPage .apointment-time{
+  justify-content: center;
+}
+
+.firstDoctorPage .booking-time{
+  justify-content: center;
+}
 }

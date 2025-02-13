@@ -289,3 +289,85 @@
   }
 
 }
+
+
+@media only screen and (max-width:1180px) {
+  .secondDoctorPage .doc-img-text {
+    padding-left: 20px;
+    margin: auto;
+  }
+
+  .secondDoctorPage .doctor-texts {
+    padding-right: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 950px) {
+  .secondDoctorPage .doctor-texts {
+    padding-right: 20px;
+  }
+
+  .secondDoctorPage .textsOne {
+    height: auto;
+  }
+
+}
+
+
+@media only screen and (max-width:700px) {
+  .secondDoctorPage .doctor-name {
+    display: block;
+  }
+
+  .secondDoctorPage .doctor-texts .doctor-paragraph .main-info {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .secondDoctorPage .doctor-texts .textsOne {
+    position: relative;
+    margin-top: -100px;
+    background-color: #fff;
+  }
+
+  .secondDoctorPage .first-doc-inner .doc-img-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondDoctorPage .first-doc-inner .doc-image img {
+    width: 375px;
+    height: auto;
+  }
+
+  .secondDoctorPage .doctor-texts .doctor-paragraph .main-info {
+    flex-direction: row;
+  }
+
+  .secondDoctorPage .doctor-name {
+    display: flex;
+  }
+
+  .secondDoctorPage .booking-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .secondDoctorPage .first-doc-inner .doc-image img {
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  .secondDoctorPage .apointment-time {
+    justify-content: center;
+  }
+
+  .secondDoctorPage .booking-time {
+    justify-content: center;
+  }
+}
