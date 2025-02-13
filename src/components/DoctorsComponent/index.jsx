@@ -7,6 +7,14 @@ const DoctorsComponent = () => {
   const doctors = useSelector((state) => state.doctors.doctors);
   const navigate = useNavigate();
 
+  const handleClick = (link) => {
+    // Navigate to the link
+    navigate(link);
+    // Scroll to the top of the page
+    window.scroll(0, 0);
+  };
+
+
   return (
     <div className='doctorsComponent'>
       <div className="doctors-inner">
@@ -17,7 +25,7 @@ const DoctorsComponent = () => {
         <div className="doctor-images-container">
           {doctors.slice(0, 10).map((item) => (
             <div
-              onClick={() => navigate(item.link)}
+              onClick={() => handleClick(item.link)}
               className="doctors-list"
               key={item.id}
             >

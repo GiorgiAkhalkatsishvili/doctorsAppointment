@@ -22,7 +22,7 @@ flex-direction: column;
   background-color: #5F6FFF;
   border-radius: 12px;
   width: 270px;
-  height: 377px;
+  height: 300px;
 }
 
 .firstDoctorPage .doctor-texts .textsOne{
@@ -30,7 +30,7 @@ flex-direction: column;
   width: 100%;
   border-radius: 12px;
   padding-left: 42px;
-  padding-top: 43px;
+  padding-top: 20px;
 }
 
 .firstDoctorPage .doctor-name{
@@ -54,7 +54,7 @@ flex-direction: column;
   display: flex;
   align-items: center;
   gap: 7px;
-  margin-top: 11px;
+  margin-top: 5px;
 }
 
 .firstDoctorPage .doctor-texts .doctor-paragraph .main-info span{
@@ -72,7 +72,7 @@ flex-direction: column;
   align-items: center;
   gap: 6px;
   margin-top: 17px;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
 }
 
 .firstDoctorPage .doctor-texts .doctor-about p{
@@ -95,7 +95,7 @@ flex-direction: column;
 }
 
 .firstDoctorPage .doctor-texts .doctor-fee{
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 
 .firstDoctorPage .doctor-texts .doctor-fee span{
