@@ -197,6 +197,10 @@ background-color: #c5c0c0;
 border-radius: 50%;
 }
 
+.sideBarLinks .appointmentLink{
+  display: none;
+}
+
 @media only screen and (max-width:1180px){
   .headerComponent{
     padding-left: 20px;
@@ -224,6 +228,26 @@ border-radius: 50%;
   .header-btn{
     display: none;
   }
+
+.sidebar-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
+.sidebar-btn button{
+  padding: 15px;
+  border-radius: 12px;
+  outline: none;
+  background-color: #5F6FFF;
+  border: solid 1px #5F6FFF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .4s ease;
+}
 
+.headerComponent .sidebar-btn button:hover {
+  background-color: #142bf7;
+}
+}

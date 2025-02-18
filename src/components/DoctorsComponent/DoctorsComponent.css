@@ -193,4 +193,8 @@ max-width: 280px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.doctor-images-container .doctor-img img{
+  height: auto;
+}
 }

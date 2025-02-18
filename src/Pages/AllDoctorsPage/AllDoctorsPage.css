@@ -38,7 +38,6 @@
 .doctors-container .imageOne img {
   background-color: #EAEFFF;
   border-radius: 12px 12px 0 0;
-  height: 260px;
   width: 215px;
   margin-bottom: 15px;
 }
@@ -103,4 +102,66 @@ border: solid 1px #B4B4B4;
 width: 260px;
 border-radius: 8px;
 cursor: pointer;
+}
+
+
+@media only screen and (max-width:1215px){
+  .allDoctorsPage{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .allDoctorsPage .doctors-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1010px){
+.allDoctorsPage .doctors-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+.doctors-container .imageOne img {
+  max-width: 320px;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 800px){
+.allDoctorsPage .doctors-container {
+    grid-template-columns: 1fr;
+  }
+
+.doctors-container .imageOne img {
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 630px){
+  .allDoctorsPage .doctorsPage-inner{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.allDoctorsPage .options-list .optionOne{
+ width: 400px;
+}
+
+.allDoctorsPage .main-heading{
+  text-align: center;
+}
+
+.allDoctorsPage .imageOne img{
+max-width: 400px;
+width: 100%;
+height: auto;
+}
+}
+
+
+@media only screen and (max-width: 450px){
+.allDoctorsPage .options-list .optionOne {
+max-width: 300px;
+}
 }

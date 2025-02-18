@@ -28,6 +28,16 @@ const HeaderComponent = () => {
     profilePop();
   };
 
+  const handleSidebarBtn = () => {
+    let Sidebarbtn = document.getElementById("Sidebarbtn");
+    Sidebarbtn.innerText = "Account Created!"
+    Sidebarbtn.style.backgroundColor = "#06D001";
+    Sidebarbtn.style.borderColor = "#06D001"
+    dispatch(createAccount());
+    let appointmentsLink = document.querySelector(".appointmentLink")
+    appointmentsLink.style.display = "block";
+  }
+
   const toggleDropDown = () => {
     setDropDown(!dropDown);
   };
@@ -78,13 +88,18 @@ const HeaderComponent = () => {
 </svg>
               </p>
             </div>
-            <ul>
-             <Link to="/"><li>HOME</li></Link>
-            <Link to="/AllDoctors"><li>ALL DOCTORS</li></Link>
-            <Link to="/about"><li>ABOUT</li></Link>
-            <Link to="/contact"><li>CONTACT</li></Link>
+            <ul className='sideBarLinks'>
+             <Link onClick={() => setSideBar(false)} to="/"><li>HOME</li></Link>
+            <Link onClick={() => setSideBar(false)} to="/AllDoctors"><li>ALL DOCTORS</li></Link>
+            <Link onClick={() => setSideBar(false)} to="/about"><li>ABOUT</li></Link>
+            <Link onClick={() => setSideBar(false)} to="/contact"><li>CONTACT</li></Link>
+              <div className="appointmentLink">
+                <Link onClick={() => setSideBar(false)} to="/AppointmentsPage"><li>My Appointments</li></Link>
+            </div>
             </ul>
-            <button id="btn" onClick={handleCreateAccount}>Create Account</button>
+            <div className="sidebar-btn">
+              <button id="Sidebarbtn" onClick={handleSidebarBtn}>Create Account</button>
+            </div>
           </div>
         )}
 
