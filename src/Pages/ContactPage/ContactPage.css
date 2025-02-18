@@ -82,3 +82,35 @@ line-height: 32px;
   border: solid 1px #5F6FFF;
   color: #fff;
 }
+
+
+@media only screen and (max-width:950px){
+  .contactPage .main-img img{
+    padding-right: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 630px){
+  .contactPage .center-info{
+flex-direction: column;
+align-items: center;
+  }
+
+  .contactPage .main-img img{
+    margin: auto;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .contactPage .main-texts{
+    text-align: center;
+  }
+
+  .contactPage .main-texts .final-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -34,13 +34,16 @@
 }
 
 
-.aboutComponent .main-image-info .image-section img{
-  width: 440px;
+.aboutComponent .main-image-info .image-section{
+ max-width: 438px;
+ width: 100%;
 }
 
-.aboutComponent .main-image-info img{
-  width: 440px;
+.aboutComponent .main-image-info .image-section img{
+ max-width: 438px;
+ width: 100%;
 }
+
 
 .aboutComponent .main-image-info .main-text h4{
   font-size: 20px;
@@ -96,4 +99,47 @@ padding-right: 100px;
 
 .aboutComponent .bottom-info{
   margin-bottom: 130px;
+}
+
+
+@media only screen and (max-width:1180px){
+.aboutComponent{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}
+
+@media only screen and (max-width: 950px){
+  .aboutComponent .main-image-info{
+  display: block;
+  gap: 10px;
+  }
+  .aboutComponent .main-image-info img{
+  float: left;
+  margin-right: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 800px){
+  .aboutComponent .main-image-info img{
+    width: 100%;
+  }
+
+  .aboutComponent .info-containers{
+    flex-direction: column;
+  }
+
+  .aboutComponent .info-containers .firstInfo{
+    border-bottom: solid 1px #ABABAB;
+  }
+  .aboutComponent .info-containers .secondInfo{
+    border-bottom: solid 1px #ABABAB;
+  }
+.aboutComponent .info-containers .secondInfo{
+ border-right: none;
+ }
+.aboutComponent .info-containers .firstInfo{
+  border-right: none;
+}
 }

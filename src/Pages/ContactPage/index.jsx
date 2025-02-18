@@ -27,7 +27,9 @@ Suite 350, Washington, USA</p>
           <h3>Careers at PRESCRIPTO</h3>
           <p>Learn more about our teams and job openings.</p>
           </div>
-          <button>Explore Jobs</button>
+          <div className="final-btn">
+            <button>Explore Jobs</button>
+          </div>
         </div>
       </div>
     </div>
