@@ -29,27 +29,27 @@
 }
 
 
-.doctors-container .imageOne {
+.doctors-container .each-doctor-inner{
   border: solid 1px #C9D8FF;
   border-radius: 12px;
   cursor: pointer;
 }
 
-.doctors-container .imageOne img {
+.doctors-container .each-doctor-inner .doctor-img img {
   background-color: #EAEFFF;
   border-radius: 12px 12px 0 0;
   width: 215px;
   margin-bottom: 15px;
 }
 
-.doctors-container .imageOne .image-texts {
+.doctors-container .each-doctor-inner .image-texts {
   display: flex;
   align-items: center;
   gap: 7px;
   margin-bottom: 10px;
 }
 
-.doctors-container .imageOne span {
+.doctors-container .each-doctor-inner span {
   border: solid 1px #0FBF00;
   width: 7px;
   height: 7px;
@@ -58,27 +58,22 @@
   margin-left: 14px;
 }
 
-.doctors-container .imageOne p {
-  color: #0FBF00;
-  font-size: 15px;
-  line-height: 18px;
-}
-
-.doctors-container .imageOne .doctor-info {
+.doctors-container .each-doctor-inner .title-speciality{
   margin-left: 14px;
 }
 
-.doctors-container .imageOne .doctor-info h2 {
+.doctors-container .each-doctor-inner .title-speciality h2 {
   line-height: 27px;
   font-size: 22px;
   color: #1F2937;
 }
 
-.doctors-container .imageOne .doctor-info p {
+.doctors-container .each-doctor-inner .title-speciality p {
   color: #4B5563;
   line-height: 18px;
   font-size: 15px;
   padding-bottom: 21px;
+  margin-top: 7px;
 }
 
 .allDoctorsPage .doctorsPage-inner .options-list{
@@ -120,7 +115,7 @@ cursor: pointer;
     grid-template-columns: 1fr 1fr;
   }
 
-.doctors-container .imageOne img {
+.doctors-container .each-doctor-inner .doctor-img img {
   max-width: 320px;
   width: 100%;
 }
@@ -131,7 +126,7 @@ cursor: pointer;
     grid-template-columns: 1fr;
   }
 
-.doctors-container .imageOne img {
+.doctors-container .each-doctor-inner .doctor-img img {
   width: 100%;
 }
 }
@@ -152,7 +147,7 @@ cursor: pointer;
   text-align: center;
 }
 
-.allDoctorsPage .imageOne img{
+.doctors-container .each-doctor-inner .doctor-img img{
 max-width: 400px;
 width: 100%;
 height: auto;

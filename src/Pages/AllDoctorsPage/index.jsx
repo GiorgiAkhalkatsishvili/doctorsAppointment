@@ -10,8 +10,18 @@ import doctorSeven from '../../assets/images/doc7.png'
 import doctorEight from '../../assets/images/doc8.png'
 import doctorNine from '../../assets/images/doc9.png'
 import doctorTen from '../../assets/images/doc10.png'
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const AllDoctorsPage = () => {
+  const doctors = useSelector(state=> state.doctors.doctors)
+  const navigate = useNavigate();
+
+  const handleClick = (link) => {
+    // Navigate to the link
+    navigate(link);
+    window.scroll(0, 0);
+  };
   return (
     <div className='allDoctorsPage'>
       <div className="main-heading">
@@ -41,116 +51,27 @@ const AllDoctorsPage = () => {
         </div>
         </div>
          <div className="doctors-container">
-                     <div className="imageOne">
-                    <img src={doctorOne} alt="" />
-                    <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorTwo} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorThree} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorFour} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorFive} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorSix} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorSeven} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorEight} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorNine} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
-                  <div className="imageOne">
-                    <img src={doctorTen} alt="" />
-                      <div className="image-texts">
-                      <span></span>
-                      <p>Available</p>
-                    </div>
-                    <div className="doctor-info">
-                      <h2>Dr. Richard James</h2>
-                      <p>General physician</p>
-                    </div>
-                  </div>
+           {doctors.slice(0, 10).map((item) => (
+            <div
+              onClick={() => handleClick(item.link)}
+              className="doctors-list"
+              key={item.id}
+            >
+              <div className="each-doctor-inner">
+                <div className="doctor-img">
+                  <img src={item.img} alt={item.title} />
+                </div>
+                <div className='image-texts'>
+                  <span></span>
+                  <p>Available</p>
+                </div>
+                <div className="title-speciality">
+                  <h2>{item.title}</h2>
+                  <p>{item.position}</p>
+                </div>
+              </div>
+            </div>
+          ))}
            </div>
       </div>
     </div>

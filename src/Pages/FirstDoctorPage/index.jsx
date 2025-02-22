@@ -4,8 +4,8 @@ import './FirstDoctorPage.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { selectDoctor } from '../../Redux/doctorsSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons'; 
+
 
 
 const FirstDoctorPage = () => {
@@ -20,7 +20,7 @@ const FirstDoctorPage = () => {
     if (!accountCreated) {
       setMessage(
   <div id='error-massage' className='error' style={{width: '280px', display: 'flex', gap: '10px', alignItems: 'center'}}>
-    <FontAwesomeIcon icon={faCircleXmark} style={{ color: 'red', fontSize: '25px'}}/>
+  <FontAwesomeIcon icon={faCircleXmark} style={{ color: 'red', fontSize: '25px' }} />
     {' '}<p>You need to create an account first!</p>
         </div>
       );
@@ -28,7 +28,7 @@ const FirstDoctorPage = () => {
      } else {
       setError(
    <div id='success-massage' className='success'  style={{width: '280px', display: 'flex', gap: '10px', alignItems: 'center'}}>
-    <FontAwesomeIcon icon={faCircleCheck} style={{ color: 'green', fontSize: '25px' }} />
+  <FontAwesomeIcon icon={faCircleCheck} style={{ color: 'green', fontSize: '25px' }} />
     {' '}<p>Appointment booked successfully!</p>
       </div>
       );

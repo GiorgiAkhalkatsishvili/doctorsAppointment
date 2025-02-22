@@ -1,9 +1,15 @@
 import React from 'react';
 import './AppointmentsPage.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeDoctor } from '../../Redux/doctorsSlice';
 
 const AppointmentsPage = () => {
   const selectedDoctor = useSelector((state) => state.doctors.selectedDoctor);
+  const dispatch = useDispatch()
+
+  const removeDoc = (id) => {
+    dispatch(removeDoctor(id))
+  }
 
   // If no doctor is selected, display a message
   if (selectedDoctor.length === 0) {
@@ -49,7 +55,7 @@ const AppointmentsPage = () => {
                 <button>Pay here</button>
               </div>
               <div className="doctor-btn-cancel">
-                <button>Cancel appointment</button>
+                <button onClick={()=>removeDoc(doctor.id)}>Cancel appointment</button>
               </div>
             </div>
           </div>

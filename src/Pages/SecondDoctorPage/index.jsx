@@ -3,8 +3,7 @@ import './SecondDoctorPage.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { selectDoctor } from '../../Redux/doctorsSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons'; 
 
 const SecondDocotorPage = () => {
   const dispatch = useDispatch();
@@ -26,7 +25,7 @@ const SecondDocotorPage = () => {
        } else {
         setError(
      <div id='success-massage' className='success'  style={{width: '280px', display: 'flex', gap: '10px', alignItems: 'center'}}>
-      <FontAwesomeIcon icon={faCircleCheck} style={{ color: 'green', fontSize: '25px' }} />
+     <FontAwesomeIcon icon={faCircleCheck} style={{ color: 'green', fontSize: '25px' }} />
       {' '}<p>Appointment booked successfully!</p>
         </div>
         );

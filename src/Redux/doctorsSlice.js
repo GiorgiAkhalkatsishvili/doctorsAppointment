@@ -35,7 +35,10 @@ const doctorsSlice = createSlice({
       state.doctors = action.payload;
     },
      selectDoctor: (state, action) => {
-      state.selectedDoctor.push(action.payload);
+       const exists = state.selectedDoctor.some(item=>item.id === action.payload.id);
+       if (!exists) {
+        state.selectedDoctor.push(action.payload)  
+       }
     },
     createAccount: (state) => {
       state.accountCreated = true;
@@ -43,9 +46,12 @@ const doctorsSlice = createSlice({
     resetAccount: (state) => {
       state.accountCreated = false;
     },
+    removeDoctor: (state, action)=> {
+  state.selectedDoctor = state.selectedDoctor.filter(doc => doc.id !== action.payload)
+    }
   }
 });
 
 
-export const { addDoctors, selectDoctor,  createAccount, resetAccount} = doctorsSlice.actions;
+export const { addDoctors, selectDoctor,  createAccount, resetAccount, removeDoctor} = doctorsSlice.actions;
 export default doctorsSlice.reducer;

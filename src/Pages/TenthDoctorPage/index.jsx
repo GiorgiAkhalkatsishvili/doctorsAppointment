@@ -3,8 +3,7 @@ import './TenthDoctorPage.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { selectDoctor } from '../../Redux/doctorsSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 
 const SecondDocotorPage = () => {

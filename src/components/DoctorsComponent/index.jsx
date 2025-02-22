@@ -2,6 +2,7 @@ import React from 'react';
 import './DoctorsComponent.css';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const DoctorsComponent = () => {
   const doctors = useSelector((state) => state.doctors.doctors);
@@ -10,7 +11,6 @@ const DoctorsComponent = () => {
   const handleClick = (link) => {
     // Navigate to the link
     navigate(link);
-    // Scroll to the top of the page
     window.scroll(0, 0);
   };
 
@@ -46,7 +46,7 @@ const DoctorsComponent = () => {
           ))}
         </div>
         <div className="doctors-btn">
-          <button>more</button>
+          <Link onClick={()=>window.scroll(0,0)} to="/AllDoctors"><button>more</button></Link>
         </div>
       </div>
     </div>
