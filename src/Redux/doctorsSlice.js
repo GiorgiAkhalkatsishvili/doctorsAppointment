@@ -48,7 +48,7 @@ const doctorsSlice = createSlice({
     },
     removeDoctor: (state, action)=> {
   state.selectedDoctor = state.selectedDoctor.filter(doc => doc.id !== action.payload)
-    }
+    },
   }
 });
 

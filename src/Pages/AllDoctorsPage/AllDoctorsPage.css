@@ -99,6 +99,23 @@ border-radius: 8px;
 cursor: pointer;
 }
 
+.doctorsPage-inner .filter-options button{
+padding: 5px 15px;
+margin-top: 15px;
+font-size: 16px;
+background-color: #5F6FFF;
+color: #fff;
+border: solid 2px #5F6FFF;
+border-radius: 6px;
+cursor: pointer;
+transition: .3s ease;
+display: none;
+}
+
+.doctorsPage-inner .filter-options button:hover{
+  background-color: #1e34fa;
+  border: solid 2px #1e34fa;
+}
 
 @media only screen and (max-width:1215px){
   .allDoctorsPage{
@@ -152,6 +169,20 @@ max-width: 400px;
 width: 100%;
 height: auto;
 }
+.doctorsPage-inner .filter-options button{
+  display: block;
+}
+
+.options-list .optionOne{
+  display: none;
+}
+
+.doctorsPage-inner .filter-options {
+ position: relative;
+ top: 90px;
+ right: 150px;
+}
+
 }
 
 

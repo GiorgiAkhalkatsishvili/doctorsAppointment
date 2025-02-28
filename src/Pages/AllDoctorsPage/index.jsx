@@ -1,27 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './AllDoctorsPage.css'
-import doctorOne from '../../assets/images/additional-doc.png'
-import doctorTwo from '../../assets/images/doc2.png'
-import doctorThree from '../../assets/images/doc3.png'
-import doctorFour from '../../assets/images/doc4.png'
-import doctorFive from '../../assets/images/doc5.png'
-import doctorSix from '../../assets/images/doc6.png'
-import doctorSeven from '../../assets/images/doc7.png'
-import doctorEight from '../../assets/images/doc8.png'
-import doctorNine from '../../assets/images/doc9.png'
-import doctorTen from '../../assets/images/doc10.png'
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const AllDoctorsPage = () => {
   const doctors = useSelector(state=> state.doctors.doctors)
   const navigate = useNavigate();
+  const [options, setOptions] = useState(false);
 
   const handleClick = (link) => {
     // Navigate to the link
     navigate(link);
     window.scroll(0, 0);
   };
+
+  const filterOptions = () => {
+    setOptions(true)
+  }
   return (
     <div className='allDoctorsPage'>
       <div className="main-heading">
@@ -29,7 +24,10 @@ const AllDoctorsPage = () => {
         </div>
       <div className="doctorsPage-inner">
         <div className="options">
-        <div className="options-list">
+          <div className="options-list">
+            <div className="filter-options">
+            <button onClick={filterOptions}>Filter</button>
+          </div>
             <div className="optionOne">
               <h2>General physician</h2>
           </div>

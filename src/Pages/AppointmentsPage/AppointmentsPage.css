@@ -1,3 +1,29 @@
+:root {
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  /* Dimmed background for the modal */
+  --modal-bg: #2354e1;
+  /* Background color for the modal */
+  --modal-text-color: #fff;
+  /* Text color inside the modal */
+  --modal-width: 900px;
+  /* Modal width */
+  --modal-radius: 12px;
+  /* Modal border radius */
+}
+
+.appointment-payment {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: var(--modal-bg);
+  color: #fff;
+  max-width: var(--modal-width);
+  width: 100%;
+  max-height: 500px;
+  height: 100vh;
+  border-radius: var(--modal-radius);
+  z-index: 1000;
+}
 
 .appointmentsPage{
   max-width: 1200px;
@@ -120,6 +146,273 @@ margin-top: 18px;
 .appointmentsPage .warning-text p{
   font-size: 20px;
   color: rgb(210, 6, 6);
+}
+
+.appointment-payment{
+  position: fixed;
+  top: 55%;
+  margin: auto;
+  left: 50%;
+  background-color: #2354e1 !important;
+  color: #fff;
+  max-width: 900px;
+  width: 100%;
+  max-height: 500px;
+  height: 100vh;
+  border-radius: 12px;
+  transform: translate(-50%, -50%)
+}
+
+.appointment-payment .inner .main-texts{
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  padding: 15px 0 0 15px;
+}
+
+.appointment-payment .inner .main-texts .textOne h1{
+border: solid 1px #fff;
+background-color: #2f5de5;
+padding: 7px 15px;
+border-radius: 12px;
+color: #fff;
+text-align: center;
+font-size: 25px;
+}
+
+.appointment-payment .inner{
+  display: flex;
+  gap: 15px;
+}
+
+.appointment-payment .inner .bottom-test-text{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 300px;
+  margin-left: 15px;
+}
+
+.appointment-payment .inner .main-texts .textTwo h1{
+color: #fff;
+font-size: 22px;
+}
+
+.appointment-payment .inner .price-summaray{
+  border: solid 1px #fff;
+  background-color: #fff;
+  color: #000;
+  width: 290px;
+  margin-left: 15px;
+  border-radius: 8px;
+  padding: 10px 0 10px 10px;
+  margin-top: 10px;
+}
+
+.appointment-payment .inner .price-summaray p{
+  font-size: 18px;
+  color: #4B5563;
+  font-weight: 500;
+}
+
+.appointment-payment .inner .price-summaray h3{
+  font-size: 24px;
+  margin-top: 5px;
+  color: #000;
+}
+
+.appointment-payment .inner .main-payment-methods{
+  background-color: #fff;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  max-height: 481px;
+  height: 100vh;
+  margin-bottom: 10px;
+}
+
+.appointment-payment .inner .main-payment-methods .payment-text p{
+  color: #4B5563;
+  font-weight: 500;
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+}
+
+.appointment-payment .inner .payment-text{
+  margin-top: 7px;
+  text-align: center;
+}
+
+.appointment-payment .inner .payment-svgs{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  position: relative;
+  bottom: 24px;
+}
+
+.appointment-payment .inner .payment-svgs svg{
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-bg);
+  z-index: 999;
+}
+
+.appointment-payment .main-payment-logos{
+display: flex;
+gap: 30px;
+}
+
+.appointment-payment .main-payment-logos .first-cards-column .first-column-inner{
+  display: flex;
+  gap: 60px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.appointment-payment .main-payment-text h1{
+color: #000;
+font-size: 18px;
+font-weight: 500;
+color: #4B5563;
+}
+
+.appointment-payment .logoOne{
+  display: flex;
+  gap: 3px;
+}
+
+.appointment-payment .logo img{
+height: 22px;
+border: solid 1px #bac3cf;
+border-radius: 2px;
+}
+
+.appointment-payment .logoTwo img{
+height: 22px;
+border: solid 1px #bac3cf;
+border-radius: 2px;
+padding: 2px;
+}
+
+.appointment-payment .logoThree img{
+height: 22px;
+border: solid 1px #bac3cf;
+border-radius: 2px;
+}
+
+.appointment-payment .bottom-cards{
+  background-color: #eeeffa;
+  padding-right: 5px;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+}
+
+.appointment-payment .bottom-cards .bottom-cards-texts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointment-payment .bottom-cards .inner-cards{
+  display: flex;
+  gap: 3px;
+}
+
+.appointment-payment .bottom-cards .main-text h1{
+color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4B5563;
+  padding-left: 15px;
+}
+
+.appointment-payment .bottom-cards .bottom-card-logoOne img{
+  height: 20px;
+  width: 35px;
+    border: solid 1px #bac3cf;
+    border-radius: 2px;
+}
+
+.appointment-payment .bottom-cards{
+  margin-top: 20px;
+}
+
+.appointment-payment .bottom-cards .bottom-card-logoTwo img{
+  height: 20px;
+  width: 35px;
+    border: solid 1px #bac3cf;
+    border-radius: 2px;
+}
+
+.appointment-payment .second-inputs-column{
+  width: 100%;
+}
+
+.main-payment-logos .second-inputs-column .main-text p{
+color: #4B5563;
+font-size: 17px;
+font-weight: 500;
+}
+
+.appointment-payment .second-inputs-column .main-inputs input{
+width: 100%;
+padding: 10px;
+border: solid 1px #4B5563;
+border-radius: 3px;
+outline: none;
+}
+
+.appointment-payment .second-inputs-column .main-inputs{
+margin-right: 20px;
+margin-top: 15px;
+}
+
+.appointment-payment .second-inputs-column .inpTwo{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.appointment-payment .second-inputs-column .checkMarkInp{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.appointment-payment .second-inputs-column .checkMarkInp input{
+  width: 15px;
+  cursor: pointer;
+}
+
+.appointment-payment .second-inputs-column .checkMarkInp p{
+color: #4B5563;
+}
+
+.appointment-payment .main-inputs .main-purchasing-btn button{
+width: 100%;
+margin-top: 15px;
+padding: 10px;
+border-radius: 4px;
+background-color: #000;
+color: #fff;
+border: solid 1px #000;
+cursor: pointer;
+font-size: 14px;
+transition: .4s ease;
+}
+
+.appointment-payment .main-inputs .main-purchasing-btn button:hover{
+  background-color: #706d6d;
+  border: solid 1px #706d6d;
 }
 
 @media only screen and (max-width:1180px){
