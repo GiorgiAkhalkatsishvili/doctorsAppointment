@@ -11,7 +11,9 @@ const FourthDoctorPage = () => {
   const [error, setError] = useState('')
   const doctors = useSelector((state) => state.doctors.doctors);
   const FourthDoctor = doctors[3];
-  const accountCreated = useSelector((state) => state.doctors.accountCreated)
+  const accountCreated = useSelector((state) => state.doctors.accountCreated);
+  const [slotIndex, setSlotIndex] = useState(0);
+  const [timeIndex, setTimeIndex] = useState(0);
   
    const handleBookAppointment = () => {
         if (!accountCreated) {
@@ -76,61 +78,33 @@ treatment strategies.</p>
         <div className="booking-heading">
           <h1>Booking slots</h1>
         </div>
-        <div className="apointment-time">
-          <div className="timeOne">
-            <h4>MON</h4>
-            <h4>10</h4>
-          </div>
-          <div className="timeOne">
-            <h4>TUE</h4>
-            <h4>11</h4>
-          </div>
-          <div className="timeOne">
-            <h4>WED</h4>
-            <h4>12</h4>
-          </div>
-          <div className="timeOne">
-            <h4>THU</h4>
-            <h4>13</h4>
-          </div>
-          <div className="timeOne">
-            <h4>FRI</h4>
-            <h4>14</h4>
-          </div>
-          <div className="timeOne">
-            <h4>SAT</h4>
-            <h4>15</h4>
-          </div>
-          <div className="timeOne">
-            <h4>SUN</h4>
-            <h4>16</h4>
-          </div>
-              </div>
-           <div className="booking-time">
-              <div className="clockOne">
-                <h5>8.00 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>8.30 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>9.00 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>9.30 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>10.00 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>10.30 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>11.00 am</h5>
-              </div>
-              <div className="clockOne">
-                <h5>11.30 am</h5>
-              </div>
+             <div className="apointment-time">
+  {FourthDoctor.dates.map((day, index) => (
+    <div 
+      key={index}
+      className={`clockOne ${slotIndex === index ? 'selected' : ''}`} // Conditionally apply the 'selected' class
+      onClick={() => setSlotIndex(index)} // Set the selected index on click
+    >
+      <p>{day.monday || day.tuesday || day.wednesday || day.thursday || day.friday || day.saturday || day.sunday}</p>
+      <h4>{day.number}</h4>
+    </div>
+  ))}
+</div>
+ <div className="booking-time">
+                {FourthDoctor.time.map((time, index) => (
+                  <div>
+                    <div className={`timeOne ${timeIndex === index ? 'selected' : ''}`} key={index} onClick={() => setTimeIndex(index)}>
+                      <h4>{time.timeOne}</h4>
+                      <h4>{time.timeTwo}</h4>
+                      <h4>{time.timeThree}</h4>
+                      <h4>{time.timeFour}</h4>
+                      <h4>{time.timeFive}</h4>
+                      <h4>{time.timeSix}</h4>
+                      <h4>{time.timeSeven}</h4>
+                      <h4>{time.timeEight}</h4>
+                    </div>
+                </div>
+              ))}
               </div>
               <div className="booking-btn">
                 <button onClick={handleBookAppointment}>Book an appointment</button>

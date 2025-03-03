@@ -42,6 +42,7 @@ flex-direction: column;
 .firstDoctorPage .doctor-texts h2{
   font-size: 36px;
   line-height: 45px;
+  font-weight: 500;
 }
 
 .firstDoctorPage .doctor-texts .doctor-paragraph .main-info p{
@@ -122,39 +123,27 @@ margin-top: 43px;
   flex-wrap: wrap;
 }
 
-.doctor-booking-info .apointment-time .timeOne{
+.doctor-booking-info .timeOne{
   border: solid 1px #9CA3AF;
-  background-color: #fff;
   border-radius: 43px;
-  width: 87px;
   text-align: center;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
 
-.doctor-booking-info .apointment-time .timeOne h4{
-  font-size: 20px;
-  color: #4B5563;
-}
-
-.doctor-booking-info .apointment-time .timeOne p{
-  font-size: 20px;
-  color: #4B5563;
+.doctor-booking-info .timeOne h4{
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .doctor-booking-info .booking-time .clockOne{
 border: solid 1px rgba(156, 163, 175, 1);
-width: 100px;
-height: 40px;
 border-radius: 20px;
 font-size: 16px;
-color: rgba(75, 85, 99, 1);
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 28px;
 cursor: pointer;
 }
 
@@ -162,11 +151,12 @@ cursor: pointer;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.doctor-booking-info .booking-time .clockOne h5{
+.doctor-booking-info .clockOne h4{
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .doctor-booking-info .booking-btn{
@@ -284,6 +274,12 @@ cursor: pointer;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.selected {
+  background-color: #5F6FFF;
+  color: #fff;
+  border: solid 1px rgba(156, 163, 175, 1);
 }
 
 @keyframes anim {
