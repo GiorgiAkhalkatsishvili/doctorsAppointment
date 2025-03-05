@@ -1,6 +1,4 @@
-
-
-.allDoctorsPage{
+.allDoctorsPage {
   max-width: 1200px;
   width: 100%;
   margin: auto;
@@ -15,12 +13,12 @@
   font-weight: 400;
 }
 
-.allDoctorsPage .doctorsPage-inner{
+.allDoctorsPage .doctorsPage-inner {
   display: flex;
   gap: 36px;
 }
 
-.allDoctorsPage .doctors-container{
+.allDoctorsPage .doctors-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 12px;
@@ -29,7 +27,7 @@
 }
 
 
-.doctors-container .each-doctor-inner{
+.doctors-container .each-doctor-inner {
   border: solid 1px #C9D8FF;
   border-radius: 12px;
   cursor: pointer;
@@ -58,7 +56,7 @@
   margin-left: 14px;
 }
 
-.doctors-container .each-doctor-inner .title-speciality{
+.doctors-container .each-doctor-inner .title-speciality {
   margin-left: 14px;
 }
 
@@ -76,118 +74,144 @@
   margin-top: 7px;
 }
 
-.allDoctorsPage .doctorsPage-inner .options-list{
-margin-bottom: 35px;
-margin-top: 35px;
-display: flex;
-flex-direction: column;
-gap: 15px;
+.allDoctorsPage .doctorsPage-inner .options-list {
+  margin-bottom: 35px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.doctorsPage-inner .options-list .optionOne h2{
-font-size: 16px;
-color: #4B5563;
-padding: 15px 0 15px 18px;
-font-weight: 400;
-line-height: 20px;
+.doctorsPage-inner .options-list .optionOne h2 {
+  font-size: 16px;
+  color: #4B5563;
+  padding: 15px 0 15px 18px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.doctorsPage-inner .options-list .optionOne{
-border: solid 1px #B4B4B4;
-width: 260px;
-border-radius: 8px;
-cursor: pointer;
+.doctorsPage-inner .options-list .optionOne {
+  border: solid 1px #B4B4B4;
+  width: 260px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.doctorsPage-inner .filter-options button{
-padding: 5px 15px;
-margin-top: 15px;
-font-size: 16px;
-background-color: #5F6FFF;
-color: #fff;
-border: solid 2px #5F6FFF;
-border-radius: 6px;
-cursor: pointer;
-transition: .3s ease;
-display: none;
+.doctorsPage-inner .filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.doctorsPage-inner .filter-options button:hover{
+.doctorsPage-inner .filter-options button {
+  padding: 5px 15px;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: #5F6FFF;
+  color: #fff;
+  border: solid 2px #5F6FFF;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s ease;
+  display: none;
+}
+
+.doctorsPage-inner .filter-options button:hover {
   background-color: #1e34fa;
   border: solid 2px #1e34fa;
 }
 
-@media only screen and (max-width:1215px){
-  .allDoctorsPage{
+@media only screen and (max-width:1215px) {
+  .allDoctorsPage {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .allDoctorsPage .doctors-container{
+
+  .allDoctorsPage .doctors-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 1010px){
-.allDoctorsPage .doctors-container {
+@media only screen and (max-width: 1010px) {
+  .allDoctorsPage .doctors-container {
     grid-template-columns: 1fr 1fr;
   }
 
-.doctors-container .each-doctor-inner .doctor-img img {
-  max-width: 320px;
-  width: 100%;
-}
+  .doctors-container .each-doctor-inner .doctor-img img {
+    max-width: 320px;
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 800px){
-.allDoctorsPage .doctors-container {
+@media only screen and (max-width: 800px) {
+  .allDoctorsPage .doctors-container {
     grid-template-columns: 1fr;
   }
 
-.doctors-container .each-doctor-inner .doctor-img img {
-  width: 100%;
-}
+  .doctors-container .each-doctor-inner .doctor-img img {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 630px){
-  .allDoctorsPage .doctorsPage-inner{
+@media only screen and (max-width: 630px) {
+  .allDoctorsPage .doctorsPage-inner {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-.allDoctorsPage .options-list .optionOne{
- width: 400px;
-}
+  .allDoctorsPage .options-list .optionOne {
+    width: 400px;
+  }
 
-.allDoctorsPage .main-heading{
-  text-align: center;
-}
+  .allDoctorsPage .main-heading {
+    text-align: center;
+  }
 
-.doctors-container .each-doctor-inner .doctor-img img{
-max-width: 400px;
-width: 100%;
-height: auto;
-}
-.doctorsPage-inner .filter-options button{
-  display: block;
-}
+  .doctors-container .each-doctor-inner .doctor-img img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
 
-.options-list .optionOne{
-  display: none;
-}
-
-.doctorsPage-inner .filter-options {
- position: relative;
- top: 90px;
- right: 150px;
-}
-
-}
+  .doctorsPage-inner .filter-options button {
+    display: block;
+  }
 
 
-@media only screen and (max-width: 450px){
-.allDoctorsPage .options-list .optionOne {
-max-width: 300px;
+  .doctorsPage-inner .filter-options {
+    position: relative;
+  }
+
+  .allDoctorsPage .doctorsPage-inner .options-list {
+    margin-top: 0;
+  }
+
+
 }
+
+
+@media only screen and (max-width: 450px) {
+  .allDoctorsPage .options-list .optionOne {
+    max-width: 300px;
+  }
+
+  .allDoctorsPage .options {
+    width: 100%;
+  }
+
+  .doctorsPage-inner .filter-options {
+    position: relative;
+    right: 0;
+    top: 10px;
+  }
+
+  .allDoctorsPage .doctorsPage-inner .options-list {
+    margin-bottom: 0;
+  }
+
+  .allDoctorsPage .doctorsPage-inner {
+    gap: 0;
+  }
 }

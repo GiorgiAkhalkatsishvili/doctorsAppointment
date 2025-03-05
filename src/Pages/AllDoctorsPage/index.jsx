@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const AllDoctorsPage = () => {
-  const doctors = useSelector(state=> state.doctors.doctors)
+  const doctors = useSelector(state => state.doctors.doctors)
   const navigate = useNavigate();
-  const [options, setOptions] = useState(false);
+  const [options, setOptions] = useState(true);
 
   const handleClick = (link) => {
     // Navigate to the link
@@ -15,8 +15,9 @@ const AllDoctorsPage = () => {
   };
 
   const filterOptions = () => {
-    setOptions(true)
+    setOptions(prevOptions => !prevOptions);
   }
+
   return (
     <div className='allDoctorsPage'>
       <div className="main-heading">
@@ -26,30 +27,34 @@ const AllDoctorsPage = () => {
         <div className="options">
           <div className="options-list">
             <div className="filter-options">
-            <button onClick={filterOptions}>Filter</button>
-          </div>
-            <div className="optionOne">
-              <h2>General physician</h2>
-          </div>
-            <div className="optionOne">
-              <h2>Gynecologist</h2>
-          </div>
-            <div className="optionOne">
-              <h2>Dermatologist</h2>
-          </div>
-            <div className="optionOne">
-              <h2>Pediatricians</h2>
-          </div>
-            <div className="optionOne">
-              <h2>Neurologist</h2>
-          </div>
-            <div className="optionOne">
-              <h2>Gastroenterologist</h2>
+              <button onClick={filterOptions}>Filter</button>
+            </div>
+            {options && (
+              <div className="filter-list">
+                <div className="optionOne">
+                  <h2>General physician</h2>
+                </div>
+                <div className="optionOne">
+                  <h2>Gynecologist</h2>
+                </div>
+                <div className="optionOne">
+                  <h2>Dermatologist</h2>
+                </div>
+                <div className="optionOne">
+                  <h2>Pediatricians</h2>
+                </div>
+                <div className="optionOne">
+                  <h2>Neurologist</h2>
+                </div>
+                <div className="optionOne">
+                  <h2>Gastroenterologist</h2>
+                </div>
+              </div>
+            )}
           </div>
         </div>
-        </div>
-         <div className="doctors-container">
-           {doctors.slice(0, 10).map((item) => (
+        <div className="doctors-container">
+          {doctors.slice(0, 10).map((item) => (
             <div
               onClick={() => handleClick(item.link)}
               className="doctors-list"
@@ -70,10 +75,10 @@ const AllDoctorsPage = () => {
               </div>
             </div>
           ))}
-           </div>
+        </div>
       </div>
     </div>
   )
 }
 
-export default AllDoctorsPage
+export default AllDoctorsPage;
