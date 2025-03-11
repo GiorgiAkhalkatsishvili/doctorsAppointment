@@ -516,4 +516,12 @@ gap: 0;
  .appointmentsPage .second-inputs-column{
 margin-top: 10px;
  }
+
+ .appointment-payment .inner .price-summaray{
+  margin-left: 0;
+ }
+
+ .appointment-payment .inner .main-texts{
+  padding-left: 0;
+ }
 }

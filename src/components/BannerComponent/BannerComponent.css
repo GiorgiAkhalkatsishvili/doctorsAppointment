@@ -54,7 +54,7 @@
 }
 
 .bannerComponent .banner-inner .banner-btn button {
-  padding: 15px 30px;
+  padding: 15px 20px;
   background-color: #fff;
   border: solid 1px #fff;
   border-radius: 47px;
@@ -66,6 +66,10 @@
   cursor: pointer;
 }
 
+.bannerComponent .banner-inner .banner-btn button svg{
+  height: 20px;
+  margin-left: 10px;
+}
 
 .bannerComponent .main-banner-img img {
   max-width: 600px;

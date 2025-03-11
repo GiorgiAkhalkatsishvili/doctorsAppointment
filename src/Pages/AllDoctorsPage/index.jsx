@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import './AllDoctorsPage.css'
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const AllDoctorsPage = () => {
   const doctors = useSelector(state => state.doctors.doctors)
   const navigate = useNavigate();
-  const [options, setOptions] = useState(true);
+  const [options, setOptions] = useState(false);
 
   const handleClick = (link) => {
     // Navigate to the link
@@ -29,26 +30,70 @@ const AllDoctorsPage = () => {
             <div className="filter-options">
               <button onClick={filterOptions}>Filter</button>
             </div>
-            {options && (
-              <div className="filter-list">
-                <div className="optionOne">
+            <div className="filter-list first-options">
+              <Link to='/generalPhysicianDoc'>
+               <div className="optionOne">
                   <h2>General physician</h2>
                 </div>
-                <div className="optionOne">
+              </Link>
+              <Link to='/gynecologistDoc'>
+              <div className="optionOne">
                   <h2>Gynecologist</h2>
                 </div>
-                <div className="optionOne">
+              </Link>
+              <Link to='/dermatologistDoc'>
+              <div className="optionOne">
                   <h2>Dermatologist</h2>
                 </div>
-                <div className="optionOne">
+              </Link>
+              <Link to='/pediatricianDoc'>
+              <div className="optionOne">
                   <h2>Pediatricians</h2>
                 </div>
-                <div className="optionOne">
+              </Link>
+              <Link to='/neurologistDoc'>
+              <div className="optionOne">
                   <h2>Neurologist</h2>
                 </div>
-                <div className="optionOne">
+              </Link>
+              <Link to='/gastroenterologistDoc'>
+              <div className="optionOne">
                   <h2>Gastroenterologist</h2>
                 </div>
+              </Link>
+              </div>
+            {options && (
+              <div className="filter-list second-options">
+                <Link to='/generalPhysicianDoc'>
+               <div className="optionOne">
+                  <h2>General physician</h2>
+                </div>
+              </Link>
+              <Link to='/gynecologistDoc'>
+              <div className="optionOne">
+                  <h2>Gynecologist</h2>
+                </div>
+              </Link>
+              <Link to='/dermatologistDoc'>
+              <div className="optionOne">
+                  <h2>Dermatologist</h2>
+                </div>
+              </Link>
+              <Link to='/pediatricianDoc'>
+              <div className="optionOne">
+                  <h2>Pediatricians</h2>
+                </div>
+              </Link>
+              <Link to='/neurologistDoc'>
+              <div className="optionOne">
+                  <h2>Neurologist</h2>
+                </div>
+              </Link>
+              <Link to='gastroenterologistDoc'>
+              <div className="optionOne">
+                  <h2>Gastroenterologist</h2>
+                </div>
+              </Link>
               </div>
             )}
           </div>

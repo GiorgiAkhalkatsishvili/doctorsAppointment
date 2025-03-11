@@ -1,11 +1,11 @@
-.allDoctorsPage {
+.generalPhysicianDoc {
   max-width: 1200px;
   width: 100%;
   margin: auto;
   margin-bottom: 206px;
 }
 
-.allDoctorsPage .main-heading h2 {
+.generalPhysicianDoc .main-heading h2 {
   font-size: 20px;
   line-height: 27px;
   color: #4B5563;
@@ -13,41 +13,47 @@
   font-weight: 400;
 }
 
-.allDoctorsPage .doctorsPage-inner {
+.generalPhysicianDoc .doctorsPage-inner {
   display: flex;
   gap: 36px;
 }
 
-.allDoctorsPage .doctors-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 12px;
-  margin-top: 35px;
-  row-gap: 40px;
-}
-
-
-.doctors-container .each-doctor-inner {
+.generalPhysicianDoc .doctors-container .available-doctor-one {
   border: solid 1px #C9D8FF;
   border-radius: 12px;
   cursor: pointer;
 }
 
-.doctors-container .each-doctor-inner .doctor-img img {
+.generalPhysicianDoc .doctors-container {
+  margin-top: 35px;
+  display: grid;
+  column-gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.generalPhysicianDoc .doctors-container a {
+  text-decoration: none;
+}
+
+.doctors-container .available-doctor-one img {
   background-color: #EAEFFF;
   border-radius: 12px 12px 0 0;
   width: 215px;
   margin-bottom: 15px;
 }
 
-.doctors-container .each-doctor-inner .image-texts {
+.doctors-container .available-doctor-one .image-texts {
   display: flex;
   align-items: center;
   gap: 7px;
   margin-bottom: 10px;
 }
 
-.doctors-container .each-doctor-inner span {
+.doctors-container .available-doctor-one .image-texts p {
+  color: #0FBF00;
+}
+
+.doctors-container .available-doctor-one span {
   border: solid 1px #0FBF00;
   width: 7px;
   height: 7px;
@@ -56,53 +62,35 @@
   margin-left: 14px;
 }
 
-.doctors-container .each-doctor-inner .title-speciality {
-  margin-left: 14px;
-}
-
-.doctors-container .each-doctor-inner .title-speciality h2 {
+.generalPhysicianDoc .available-doctor-one .doctor-name h4 {
   line-height: 27px;
   font-size: 22px;
   color: #1F2937;
+  margin-left: 14px;
 }
 
-.doctors-container .each-doctor-inner .title-speciality p {
+.generalPhysicianDoc .available-doctor-one .doc-speciality p {
   color: #4B5563;
   line-height: 18px;
   font-size: 15px;
   padding-bottom: 21px;
   margin-top: 7px;
+  margin-left: 14px;
 }
 
-.allDoctorsPage .doctorsPage-inner .options-list {
+.generalPhysicianDoc .doctorsPage-inner .options-list {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.doctorsPage-inner .options-list .first-options a h2{
+.doctorsPage-inner .options-list .optionOne a h2 {
   font-size: 16px;
   color: #4B5563;
   padding: 15px 0 15px 18px;
   font-weight: 400;
   line-height: 20px;
-}
-
-.doctorsPage-inner .options-list .first-options a{
-    text-decoration: none;
-}
-
-.doctorsPage-inner .options-list .second-options a h2{
-  font-size: 16px;
-  color: #4B5563;
-  padding: 15px 0 15px 18px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.doctorsPage-inner .options-list .second-options a{
-    text-decoration: none;
 }
 
 .doctorsPage-inner .options-list .optionOne {
@@ -116,6 +104,11 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.doctorsPage-inner .filter-list .active {
+  background-color: #E2E5FF;
+  border: solid 1px #E2E5FF;
 }
 
 .doctorsPage-inner .filter-options button {
@@ -136,70 +129,51 @@
   border: solid 2px #1e34fa;
 }
 
-
 @media only screen and (max-width:1215px) {
-  .allDoctorsPage {
+  .generalPhysicianDoc {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .allDoctorsPage .doctors-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 1010px) {
-  .allDoctorsPage .doctors-container {
+  .generalPhysicianDoc .doctors-container {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .doctors-container .each-doctor-inner .doctor-img img {
-    max-width: 320px;
-    width: 100%;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .allDoctorsPage .doctors-container {
+  .generalPhysicianDoc .doctors-container {
     grid-template-columns: 1fr;
+    row-gap: 40px;
   }
 
-  .doctors-container .each-doctor-inner .doctor-img img {
+  .doctors-container .available-doctor-one .doc-img img {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 630px){
-  .allDoctorsPage .navigation-options{
-    display: none;
-  }
-
-  .allDoctorsPage .second-options{
+@media only screen and (min-width: 630px) {
+  .generalPhysicianDoc .navigation-options {
     display: none;
   }
 }
 
 @media only screen and (max-width: 630px) {
-  .allDoctorsPage .doctorsPage-inner {
+  .generalPhysicianDoc .doctorsPage-inner {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .allDoctorsPage .first-options {
-      display: none;
-    }
-
   .allDoctorsPage .options-list .optionOne {
     width: 400px;
   }
 
-  .allDoctorsPage .main-heading {
+  .generalPhysicianDoc .main-heading {
     text-align: center;
   }
 
-  .doctors-container .each-doctor-inner .doctor-img img {
+  .generalPhysicianDoc .each-doctor-inner .doc-img img {
     max-width: 400px;
     width: 100%;
     height: auto;
@@ -209,28 +183,31 @@
     display: block;
   }
 
+  .generalPhysicianDoc .first-options{
+    display: none;
+  }
+
 
   .doctorsPage-inner .filter-options {
     position: relative;
   }
 
-  .allDoctorsPage .doctorsPage-inner .options-list {
+  .generalPhysicianDoc .doctorsPage-inner .options-list {
     margin-top: 0;
   }
 
-    .doctorsPage-inner .navigation-list{
+  .generalPhysicianDoc .navigation-list {
     display: none;
   }
 
 }
 
-
 @media only screen and (max-width: 450px) {
   .allDoctorsPage .options-list .optionOne {
-    max-width: 300px;
+    max-width: 400px;
   }
 
-  .allDoctorsPage .options {
+  .generalPhysicianDoc .options {
     width: 100%;
   }
 
@@ -240,11 +217,11 @@
     top: 10px;
   }
 
-  .allDoctorsPage .doctorsPage-inner .options-list {
+  .generalPhysicianDoc .doctorsPage-inner .options-list {
     margin-bottom: 0;
   }
 
-  .allDoctorsPage .doctorsPage-inner {
+  .generalPhysicianDoc .doctorsPage-inner {
     gap: 0;
   }
 }

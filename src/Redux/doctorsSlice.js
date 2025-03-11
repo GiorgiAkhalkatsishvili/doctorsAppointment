@@ -37,7 +37,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 2, img: doctorTwo, title: "Dr. Richard James", position: "General physician", link: "/secondDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 2, img: doctorTwo, title: "Dr. Richard James", position: "Gynecologist", link: "/secondDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -57,7 +57,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
             },
-      {id: 3, img: doctorThree, title: "Dr. Richard James", position: "General physician", link: "/thirdDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 3, img: doctorThree, title: "Dr. Richard James", position: "Dermatologist", link: "/thirdDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -77,7 +77,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 4, img: doctorFour, title: "Dr. Richard James", position: "General physician", link: "/fourthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 4, img: doctorFour, title: "Dr. Richard James", position: "Pediatricians", link: "/fourthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -97,7 +97,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 5, img: doctorFive, title: "Dr. Richard James", position: "General physician", link: "/fifthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 5, img: doctorFive, title: "Dr. Richard James", position: "Neurologist", link: "/fifthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -117,7 +117,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 6, img: doctorSix, title: "Dr. Richard James", position: "General physician", link: "/sixthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 6, img: doctorSix, title: "Dr. Richard James", position: "Gastroenterologist", link: "/sixthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -157,7 +157,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 8, img: doctorEight, title: "Dr. Richard James", position: "General physician", link: "/eighthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 8, img: doctorEight, title: "Dr. Richard James", position: "Gynecologist", link: "/eighthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -177,7 +177,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 9, img: doctorNine, title: "Dr. Richard James", position: "General physician", link: "/ninthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 9, img: doctorNine, title: "Dr. Richard James", position: "Pediatricians", link: "/ninthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
@@ -197,7 +197,7 @@ const doctorsSlice = createSlice({
           {timeEight: '11:30 am'},
         ]
       },
-      {id: 10, img: doctorTen, title: "Dr. Richard James", position: "General physician", link: "/tenthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
+      {id: 10, img: doctorTen, title: "Dr. Richard James", position: "Neurologist", link: "/tenthDoctor", fee: '$50', address: '57th Cross,Richmond Circle, Church Road, London', dates: [
           { monday: 'MON', number: 10 },
           { tuesday: 'TUE', number: 11 },
           { wednesday: 'WED', number: 12 },
