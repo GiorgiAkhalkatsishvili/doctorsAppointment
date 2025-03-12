@@ -30,7 +30,7 @@ const AllDoctorsPage = () => {
             <div className="filter-options">
               <button onClick={filterOptions}>Filter</button>
             </div>
-            <div className="filter-list first-options">
+            <div className="filter-list first-options opt">
               <Link to='/generalPhysicianDoc'>
                <div className="optionOne">
                   <h2>General physician</h2>
@@ -89,7 +89,7 @@ const AllDoctorsPage = () => {
                   <h2>Neurologist</h2>
                 </div>
               </Link>
-              <Link to='gastroenterologistDoc'>
+              <Link to='/gastroenterologistDoc'>
               <div className="optionOne">
                   <h2>Gastroenterologist</h2>
                 </div>

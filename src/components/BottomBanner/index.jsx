@@ -3,6 +3,13 @@ import './BottomBanner.css';
 import doctorBanner from '../../assets/images/bottomDoctor.png'
 
 const BottomBanner = () => {
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
   return (
     <div className='bottomBanner'>
       <div className="banner">
@@ -13,7 +20,7 @@ const BottomBanner = () => {
 With 100+ Trusted Doctors</h1>
         </div>
         <div className="banner-btn">
-          <button>Create account</button>
+          <button onClick={scrollToTop}>Create account</button>
         </div>
         </div>
         <div className="bottom-banner-img">

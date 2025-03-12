@@ -165,6 +165,10 @@
     align-items: center;
   }
 
+    .doctorsPage-inner .first-options{
+      display: none;
+    }
+
   .allDoctorsPage .options-list .optionOne {
     width: 400px;
   }
@@ -204,10 +208,14 @@
 
 @media only screen and (max-width: 450px) {
   .allDoctorsPage .options-list .optionOne {
-    max-width: 400px;
+    max-width: 100%;
   }
 
   .generalPhysicianDoc .options {
+    width: 100%;
+  }
+
+  .doctorsPage-inner .options-list .optionOne{
     width: 100%;
   }
 

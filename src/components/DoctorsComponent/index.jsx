@@ -3,8 +3,9 @@ import './DoctorsComponent.css';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { forwardRef, useEffect, useRef, useState } from 'react'
 
-const DoctorsComponent = () => {
+const DoctorsComponent = forwardRef((props, ref) => {
   const doctors = useSelector((state) => state.doctors.doctors);
   const navigate = useNavigate();
 
@@ -16,7 +17,7 @@ const DoctorsComponent = () => {
 
 
   return (
-    <div className='doctorsComponent'>
+    <div ref={ref} className='doctorsComponent'>
       <div className="doctors-inner">
         <div className="main-headings">
           <h1>Top Doctors to Book</h1>
@@ -51,6 +52,6 @@ const DoctorsComponent = () => {
       </div>
     </div>
   );
-};
+});
 
 export default DoctorsComponent;

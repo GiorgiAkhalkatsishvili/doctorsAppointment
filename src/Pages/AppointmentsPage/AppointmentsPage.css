@@ -278,6 +278,10 @@ gap: 30px;
   gap: 60px;
   padding-left: 15px;
   padding-right: 5px;
+  background-color: #eeeffa;
+  border-radius: 0 4px 4px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .appointment-payment .main-payment-text h1{
@@ -312,10 +316,8 @@ border-radius: 2px;
 }
 
 .appointment-payment .bottom-cards{
-  background-color: #eeeffa;
   padding-right: 5px;
   padding: 10px;
-  border-radius: 0 4px 4px 0;
 }
 
 .appointment-payment .bottom-cards .bottom-cards-texts{
@@ -473,7 +475,7 @@ text-align: center;
   .appointmentsPage .appointment-payment{
     max-width: 95%;
     width: 100%;
-    max-height: 620px;
+    max-height: 635px;
     height: 100vh;
   }
 
@@ -519,6 +521,7 @@ margin-top: 10px;
 
  .appointment-payment .inner .price-summaray{
   margin-left: 0;
+  width: 100%;
  }
 
  .appointment-payment .inner .main-texts{

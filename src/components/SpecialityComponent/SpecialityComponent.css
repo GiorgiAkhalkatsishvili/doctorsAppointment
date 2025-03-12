@@ -48,6 +48,10 @@ font-weight: 500;
   font-size: 18px;
 }
 
+.speciality-inner .images-container .image a{
+  text-decoration: none;
+}
+
 .speciality-inner .images-container img{
   max-width: 125px;
 }

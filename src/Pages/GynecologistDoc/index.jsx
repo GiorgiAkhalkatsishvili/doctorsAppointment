@@ -64,7 +64,7 @@ const GynecologistDoc = () => {
                     <h2>General physician</h2>
                   </div>
                 </Link>
-                <Link to='/gynecologistDoc'>
+                <Link to='/AllDoctors'>
                 <div className="optionOne active">
                     <h2>Gynecologist</h2>
                   </div>
@@ -79,7 +79,7 @@ const GynecologistDoc = () => {
                     <h2>Pediatricians</h2>
                   </div>
                 </Link>
-                <Link to='/AllDoctors'>
+                <Link to='/neurologistDoc'>
                 <div className="optionOne">
                     <h2>Neurologist</h2>
                   </div>

@@ -64,12 +64,12 @@ const DermatologistDoc = () => {
                   </div>
                 </Link>
                 <Link to='/AllDoctors'>
-                <div className="optionOne active">
+                <div className="optionOne">
                     <h2>Gynecologist</h2>
                   </div>
                 </Link>
                 <Link to='/AllDoctors'>
-                <div className="optionOne">
+                <div className="optionOne active">
                     <h2>Dermatologist</h2>
                   </div>
                 </Link>
