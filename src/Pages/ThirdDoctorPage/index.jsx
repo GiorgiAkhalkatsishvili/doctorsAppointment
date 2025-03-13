@@ -36,7 +36,7 @@ const ThirdDoctorPage = () => {
       setTimeout(() => {
         setMessage('')
         setError('')
-    },4000)
+    },5000)
     };
 
   return (

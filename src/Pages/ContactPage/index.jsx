@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import contactImg from '../../assets/images/contactImg.png'
 import './ContactPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark, faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const ContactPage = () => {
+  const [message, setMessage] = useState("");
+
+  const handleErrorMessage = () => {
+    setMessage(
+    <div id='successful-message' className='success'  style={{width: '280px', display: 'flex', gap: '10px', alignItems: 'center'}}>
+    <FontAwesomeIcon icon={faCircleExclamation}  style={{ fontSize: '25px', color: 'orange'  }}/>
+    <FontAwesomeIcon icon="fa-solid fa-circle-exclamation" style={{ color: 'orange', fontSize: '25px' }}/>
+        {' '}<p>Feature is not available for now!</p>
+          </div>
+        );
+      setTimeout(() => {
+        setMessage('')
+    },5000)
+  };
+  
   return (
     <div className='contactPage'>
       <div className="main-heading">
@@ -28,8 +46,16 @@ Suite 350, Washington, USA</p>
           <p>Learn more about our teams and job openings.</p>
           </div>
           <div className="final-btn">
-            <button>Explore Jobs</button>
+            <button onClick={handleErrorMessage}>Explore Jobs</button>
           </div>
+          {
+              message?(
+             <div className="successful-notification">
+             {message}
+                </div>
+              ) :
+              ('')
+              }
         </div>
       </div>
     </div>

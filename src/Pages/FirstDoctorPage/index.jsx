@@ -39,7 +39,7 @@ const FirstDoctorPage = () => {
     setTimeout(() => {
       setMessage('')
       setError('')
-  },4000)
+  },5000)
   };
 
   return (
