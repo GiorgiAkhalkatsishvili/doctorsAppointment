@@ -168,6 +168,7 @@ height: 100%;
   cursor: pointer;
   font-size: 23px;
   color: #000;
+  text-align: center;
 }
 
 .sideBar ul li:hover {

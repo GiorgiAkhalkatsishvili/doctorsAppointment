@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HeaderComponent.css';
 import { Link } from 'react-router-dom';
 import profileImg from '../../assets/images/profile_img.png';
@@ -9,6 +9,8 @@ const HeaderComponent = () => {
   const dispatch = useDispatch();
   const [dropDown, setDropDown] = useState(false);
   const [sideBar, setSideBar] = useState(false);
+  const [accountCreated, setAccountCreated] = useState(false);
+
 
   const profilePop = () => {
     let btn = document.getElementById("btn");
@@ -17,6 +19,7 @@ const HeaderComponent = () => {
     personImg.style.display = "block";
     let dropDown = document.querySelector(".dropDown");
     dropDown.style.display = "flex";
+    setAccountCreated(true);
   };
 
   const toggleSideBar = () => {
@@ -41,6 +44,13 @@ const HeaderComponent = () => {
   const toggleDropDown = () => {
     setDropDown(!dropDown);
   };
+
+  const LogOutOfAccount = () => {
+    window.location.reload();
+    setDropDown(false);
+    setSideBar(false);
+    setAccountCreated(false);
+  }
 
   return (
     <div className="headerComponent">
@@ -95,10 +105,21 @@ const HeaderComponent = () => {
             <Link onClick={() => setSideBar(false)} to="/contact"><li>CONTACT</li></Link>
               <div className="appointmentLink">
                 <Link onClick={() => setSideBar(false)} to="/AppointmentsPage"><li>My Appointments</li></Link>
+                <Link onClick={()=> setSideBar(false)} to='/myProfile'>
+                  <li>My Profile</li>
+                </Link>
+                <li onClick={LogOutOfAccount}>Logout</li>
             </div>
             </ul>
             <div className="sidebar-btn">
-              <button id="Sidebarbtn" onClick={handleSidebarBtn}>Create Account</button>
+               <button id="Sidebarbtn" onClick={handleSidebarBtn}
+                style={{
+                  backgroundColor: accountCreated ? "#06D001" : "",
+                  borderColor: accountCreated ? "#06D001" : ""
+                }}
+              >
+                {accountCreated ? "Account Created!" : "Create Account"}
+              </button>
             </div>
           </div>
         )}
@@ -128,9 +149,11 @@ const HeaderComponent = () => {
             {dropDown && (
               <div className="profile-drop-down">
                 <ul>
+                  <Link onClick={toggleDropDown} to='/myProfile'>
                   <li>My Profile</li>
-                  <Link to="/AppointmentsPage"><li>My Appointments</li></Link>
-                  <li>Logout</li>
+                  </Link>
+                  <Link onClick={toggleDropDown} to="/AppointmentsPage"><li>My Appointments</li></Link>
+                 <li onClick={LogOutOfAccount}>Logout</li>
                 </ul>
               </div>
             )}

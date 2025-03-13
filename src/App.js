@@ -23,6 +23,7 @@ import DermatologistDoc from './Pages/DermatologistDoc';
 import PediatricianDoc from './Pages/PediatricianDoc';
 import NeurologistDoc from './Pages/NeurologistDoc';
 import GastroenterologistDoc from './Pages/GastroenterologistDoc';
+import ProfilePage from './Pages/ProfilePage';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path='/pediatricianDoc' element={<PediatricianDoc/>} />
           <Route path='/neurologistDoc' element={<NeurologistDoc/>} />
           <Route path='/gastroenterologistDoc' element={<GastroenterologistDoc/>} />
+          <Route path='/myProfile' element={<ProfilePage/>} />
         </Routes>
         <FooterComponent/>
       </Router>
