@@ -8,12 +8,15 @@ const ProfilePage = () => {
   const [message, setMessage] = useState("");
    
   const handleBookAppointment = () => {
- setMessage(
-  <div id='success-massage' className='success'  style={{width: '280px', display: 'flex', gap: '10px', alignItems: 'center'}}>
-       <FontAwesomeIcon icon={faCircleCheck} style={{ color: 'green', fontSize: '25px' }} />
-        {' '}<p>Appointment booked successfully!</p>
-          </div>
-      );
+    setMessage(
+        <div id='successful-message' className='success'  style={{width: '280px', display: 'flex', gap: '10px', alignItems: 'center'}}>
+        <FontAwesomeIcon icon={faCircleCheck}  style={{ fontSize: '25px', color: 'green'  }}/>
+            {' '}<p>Information saved successfuly!</p>
+              </div>
+            );
+          setTimeout(() => {
+            setMessage('')
+        },5000)
   }
   return (
     <div className='profilePage'>
@@ -60,7 +63,7 @@ Circle, Church Road, London</p>
       </div>
       {
               message?(
-             <div className="successful-message">
+             <div className="success-notification">
              {message}
                 </div>
               ) :
