@@ -123,12 +123,49 @@ margin-top: 43px;
   flex-wrap: wrap;
 }
 
-.doctor-booking-info .timeOne{
+/* .doctor-booking-info .timeOne{
   border: solid 1px #9CA3AF;
   border-radius: 43px;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
+} */
+/* 
+.doctor-booking-info .booking-time {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+} */
+
+.doctor-booking-info .booking-time {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  gap: 10px;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 30px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.booking-time::-webkit-scrollbar {
+  display: none;
+}
+
+.doctor-booking-info .timeOne {
+  flex: 0 0 auto;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 43px;
+  text-align: center;
+  height: 50px;
+  cursor: pointer;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 
@@ -147,12 +184,6 @@ align-items: center;
 cursor: pointer;
 }
 
-.doctor-booking-info .booking-time{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
 
 .doctor-booking-info .clockOne h4{
   font-size: 16px;
@@ -335,10 +366,6 @@ cursor: pointer;
   padding-right: 20px;
 }
 
-.firstDoctorPage .textsOne{
-  height: auto;
-}
-
 }
 
 
@@ -360,12 +387,14 @@ background-color: #fff;
 }
 
   .firstDoctorPage .first-doc-inner .doc-img-text{
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
 .firstDoctorPage .first-doc-inner .doc-image img{
-  width: 375px;
+  max-width: 375px;
+  width: 100%;
   height: auto;
 }
 
@@ -377,10 +406,7 @@ background-color: #fff;
   display: flex;
 }
 
-.firstDoctorPage .booking-btn{
-  display: flex;
-justify-content: center;
-}
+
 }
 
 
@@ -390,12 +416,18 @@ justify-content: center;
   margin-right: 10px;
 }
 
-.firstDoctorPage .apointment-time{
-  justify-content: center;
-}
 
-.firstDoctorPage .booking-time{
-  justify-content: center;
+.doctor-booking-info .booking-time {
+  display: flex;
+  max-width: 390px;
+  width: 100%;
+  gap: 10px;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 30px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .firstDoctorPage .doctor-texts .doctor-paragraph .main-info{

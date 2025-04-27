@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectDoctor } from '../../Redux/doctorsSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons'; 
-
+import { useRef } from 'react';
 
 
 const FirstDoctorPage = () => {
@@ -17,6 +17,23 @@ const FirstDoctorPage = () => {
   const accountCreated = useSelector((state) => state.doctors.accountCreated);
   const [slotIndex, setSlotIndex] = useState(0);
   const [timeIndex, setTimeIndex] = useState(0);
+
+  const containerRef = useRef(null);
+  let startX = 0;
+
+  const handleTouchStart = (e) => {
+    startX = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+
+    if (containerRef.current) {
+      containerRef.current.scrollLeft += diffX;
+    }
+    startX = currentX;
+  };
 
   const handleBookAppointment = () => {
     if (!accountCreated) {
@@ -93,9 +110,12 @@ treatment strategies.</p>
     </div>
   ))}
 </div>
-    <div className="booking-time">
+    <div
+    ref={containerRef}
+    onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+    className="booking-time">
         {firstDoctor.time.map((time, index) => (
-      <div>
     <div className={`timeOne ${timeIndex === index ? 'selected' : ''}`} key={index} onClick={() => setTimeIndex(index)}>
          <h4>{time.timeOne}</h4>
         <h4>{time.timeTwo}</h4>
@@ -106,7 +126,6 @@ treatment strategies.</p>
         <h4>{time.timeSeven}</h4>
         <h4>{time.timeEight}</h4>
   </div>
-   </div>
      ))}
    </div>
            <div className="booking-btn">

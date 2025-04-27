@@ -145,7 +145,6 @@ const HeaderComponent = () => {
               </svg>
             </div>
 
-            {/* Conditionally render the dropdown */}
             {dropDown && (
               <div className="profile-drop-down">
                 <ul>

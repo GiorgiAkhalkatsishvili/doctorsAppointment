@@ -8,7 +8,6 @@ import paypalCard from '../../assets/images/paypal.png';
 import walletCard from '../../assets/images/wallet.png';
 import expressCard from '../../assets/images/express.png.png';
 import debitCard from '../../assets/images/debitCard.png'
-import { BeatLoader } from 'react-spinners';
 
 const AppointmentsPage = () => {
   const selectedDoctor = useSelector((state) => state.doctors.selectedDoctor);
